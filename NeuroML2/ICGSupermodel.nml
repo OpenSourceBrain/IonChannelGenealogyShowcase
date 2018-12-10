@@ -13,7 +13,7 @@
     <Parameter name="d" dimension="none"/>
 
     <Dynamics>
-      <DerivedVariable name="x" dimension="none" exposure="x" value="(c / (1 + exp((b - (a * v)))) + d"/>
+      <DerivedVariable name="x" dimension="none" exposure="x" value="(c / (1 + exp((b - (a * v)))) + d)"/>
     </Dynamics>
 
   </ComponentType>
@@ -45,8 +45,8 @@
                  extends="gate"
                  description="Gate which follows the ICG's Supermodel formalism">
 
-    <Child name="timeCourseSM" type="baseSMSS" />
-    <Child name="steadyStateSM" type="baseSMTau" />
+    <Child name="timeCourseSM" type="baseSMTau" />
+    <Child name="steadyStateSM" type="baseSMSS" />
 
     <Exposure name="tau" dimension="time"/>
     <Exposure name="inf" dimension="none"/>

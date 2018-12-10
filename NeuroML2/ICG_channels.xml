@@ -1,0 +1,15 @@
+<Lems>
+
+    
+    <Include file="ICGSupermodel.nml"/>
+    
+    
+    <IonChannelSM id="test_kchan_icg" conductance="10pS">
+        <gateSM id="n" instances="4">
+            <timeCourseSM id="tau" A="0.1ms" b1="1" b2="1" c1="1" c2="1" d1="1" d2="1" vh="-30mV" />
+            <steadyStateSM id="inf" a="1000per_mV" b="1" c="1" d="1" />
+        </gateSM>
+    </IonChannelSM> 
+        
+    
+</Lems>

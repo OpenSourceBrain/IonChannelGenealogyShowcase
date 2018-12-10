@@ -31,6 +31,8 @@
     </ionChannelHH>
 
 
+    -->
+
     <ionChannelHH id="kChan" conductance="10pS" species="k">
 
         <gateHHrates id="n" instances="4">
@@ -39,8 +41,6 @@
         </gateHHrates>
             
     </ionChannelHH>
-    -->
-
 
 
     <cell id="hhcell">
@@ -62,6 +62,8 @@
             <membraneProperties>
                         
                 <channelDensity id="leak" ionChannel="passiveChan" condDensity="3.0 S_per_m2" erev="-54.3mV" ion="non_specific"/>
+                <channelDensity id="kChans" ionChannel="kChan" condDensity="360 S_per_m2" erev="-77mV" ion="k"/>
+                <channelDensity id="test_kchan_icg_Chans" ionChannel="test_kchan_icg" condDensity="0 S_per_m2" erev="-77mV" ion="k"/>
                 
                 <!--
                 <channelDensity id="naChans" ionChannel="naChan" condDensity="120.0 mS_per_cm2" erev="50.0 mV" ion="na"/>
