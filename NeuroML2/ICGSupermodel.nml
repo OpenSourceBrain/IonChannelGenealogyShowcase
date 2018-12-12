@@ -7,13 +7,16 @@
   <ComponentType name="baseSMSS"
                  description="ComponentType for voltage dependent dimensionless variable which follow the Supermodel formalism, using the parameters a, b, c, d"
                  extends="baseVoltageDepVariable">
-    <Parameter name="a" dimension="per_voltage"/>
-    <Parameter name="b" dimension="none"/>
+      
+    <Parameter name="scale" dimension="voltage"/>
+    
+    <Parameter name="midpoint" dimension="voltage"/>
+    
     <Parameter name="c" dimension="none"/>
     <Parameter name="d" dimension="none"/>
 
     <Dynamics>
-      <DerivedVariable name="x" dimension="none" exposure="x" value="(c / (1 + exp((b - (a * v)))) + d)"/>
+      <DerivedVariable name="x" dimension="none" exposure="x" value="(c / (1 + exp(0 - (v - midpoint)/scale)) + d)"/>
     </Dynamics>
 
   </ComponentType>

@@ -21,8 +21,18 @@
         
         
         <Display id="d2" title="Ex5: HH cell with simple morphology: rate variables" timeScale="1ms" xmin="0" xmax="300" ymin="-0.1" ymax="1.1">
-                <Line id="n" quantity="hhpop[0]/bioPhys1/membraneProperties/kChans/kChan/n/q" scale="1"  color="#0000ff" timeScale="1ms"/>
-                <Line id="n" quantity="hhpop[0]/bioPhys1/membraneProperties/test_kchan_icg_Chans/test_kchan_icg/n/q" scale="1"  color="#0000ff" timeScale="1ms"/>
+                <Line id="n_orig" quantity="hhpop[0]/bioPhys1/membraneProperties/kChans/kChan/n/q" scale="1"  color="#0000ff" timeScale="1ms"/>
+                <Line id="n_new" quantity="hhpop[0]/bioPhys1/membraneProperties/test_kchan_icg_Chans/test_kchan_icg/n/q" scale="1"  color="#0000ff" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="d3" title="inf" timeScale="1ms" xmin="0" xmax="300" ymin="-0.1" ymax="1.1">
+                <Line id="n_orig" quantity="hhpop[0]/bioPhys1/membraneProperties/kChans/kChan/n/inf" scale="1"  color="#0000ff" timeScale="1ms"/>
+                <Line id="n_new" quantity="hhpop[0]/bioPhys1/membraneProperties/test_kchan_icg_Chans/test_kchan_icg/n/inf" scale="1"  color="#0ff0ff" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="d4" title="tau" timeScale="1ms" xmin="0" xmax="300" ymin="-1" ymax="11">
+                <Line id="n_orig" quantity="hhpop[0]/bioPhys1/membraneProperties/kChans/kChan/n/tau" scale="1ms"  color="#0000ff" timeScale="1ms"/>
+                <Line id="n_new" quantity="hhpop[0]/bioPhys1/membraneProperties/test_kchan_icg_Chans/test_kchan_icg/n/tau" scale="1ms"  color="#0ff0ff" timeScale="1ms"/>
         </Display>
         <!--
         <Display id="d3" title="Ex5: HH cell with simple morphology: current densities" timeScale="1ms" xmin="0" xmax="300" ymin="-0.1" ymax="1.1">

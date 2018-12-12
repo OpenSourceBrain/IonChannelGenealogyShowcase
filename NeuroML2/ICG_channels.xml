@@ -6,8 +6,8 @@
     
     <IonChannelSM id="test_kchan_icg" conductance="10pS">
         <gateSM id="n" instances="4">
-            <timeCourseSM id="tau" A="0.1ms" b1="1" b2="1" c1="1" c2="1" d1="1" d2="1" vh="-30mV" />
-            <steadyStateSM id="inf" a="1000per_mV" b="1" c="1" d="1" />
+            <timeCourseSM id="tau" A="6ms" b1="-.08" b2="-.02" c1="0" c2="0" d1="0" d2="0" vh="-58.9mV" />
+            <steadyStateSM id="inf" scale="20mV" midpoint="-60mV" c="1" d="0" />
         </gateSM>
     </IonChannelSM> 
         
